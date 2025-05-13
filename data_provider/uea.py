@@ -24,6 +24,7 @@ def collate_fn(data, max_len=None):
     batch_size = len(data)
     features, labels = zip(*data)
 
+
     # Stack and pad features and masks (convert 2D to 3D tensors, i.e. add batch dimension)
     lengths = [X.shape[0] for X in features]  # original sequence length for each time series
     if max_len is None:

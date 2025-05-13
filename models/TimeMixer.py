@@ -292,11 +292,11 @@ class Model(nn.Module):
             down_pool = torch.nn.AvgPool1d(self.configs.down_sampling_window)
         elif self.configs.down_sampling_method == 'conv':
             padding = 1 if torch.__version__ >= '1.5.0' else 2
-            down_pool = nn.Conv1d(in_channels=self.configs.enc_in, out_channels=self.configs.enc_in,
+            down_pool = torch.nn.Conv1d(in_channels=self.configs.enc_in, out_channels=self.configs.enc_in,
                                   kernel_size=3, padding=padding,
                                   stride=self.configs.down_sampling_window,
                                   padding_mode='circular',
-                                  bias=False)
+                                  bias=False).to(x_enc.device)
         else:
             return x_enc, x_mark_enc
         # B,T,C -> B,C,T

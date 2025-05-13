@@ -1,0 +1,80 @@
+Args in experiment:
+Namespace(task_name='classification', is_training=1, model_id='classification_vpn-iscx-m.csv', model='TimeMixer', data='custom', root_path='./dataset/', data_path='vpn-iscx-m.csv', features='MS', target='Label', freq='h', checkpoints='./checkpoints/', seq_len=96, label_len=0, pred_len=0, seasonal_patterns='Monthly', inverse=False, top_k=5, num_kernels=6, enc_in=79, dec_in=79, c_out=1, d_model=128, n_heads=8, e_layers=5, d_layers=2, d_ff=256, moving_avg=25, factor=3, distil=True, dropout=0.1, embed='timeF', activation='gelu', output_attention=False, channel_independence=0, decomp_method='moving_avg', use_norm=0, down_sampling_layers=1, down_sampling_window=2, down_sampling_method='conv', use_future_temporal_feature=0, mask_rate=0.25, anomaly_ratio=0.25, num_workers=10, itr=1, train_epochs=10, batch_size=64, patience=10, learning_rate=0.003, des='Exp', loss='MSE', lradj='TST', pct_start=0.2, use_amp=False, comment='none', use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1', p_hidden_dims=[128, 128], p_hidden_layers=2)
+Use GPU: cuda:0
+train 16059
+val 3367
+test 3367
+>>>>>>>start training : classification_classification_vpn-iscx-m.csv_none_TimeMixer_custom_sl96_pl0_dm128_nh8_el5_dl2_df256_fc3_ebtimeF_dtTrue_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+	iters: 100, epoch: 1 | loss: 1.3130863
+	speed: 0.4810s/iter; left time: 1154.9972s
+	iters: 200, epoch: 1 | loss: 1.1704957
+	speed: 0.4723s/iter; left time: 1086.8056s
+Epoch: 1 cost time: 110.65173649787903
+Epoch: 1, Steps: 250 | Train Loss: 1.318 Vali Loss: 1.169 Vali Acc: 0.617 Test Loss: 1.175 Test Acc: 0.614
+Validation loss decreased (inf --> -0.613582).  Saving model ...
+	iters: 100, epoch: 2 | loss: 1.2328663
+	speed: 0.7844s/iter; left time: 1687.2732s
+	iters: 200, epoch: 2 | loss: 1.0978516
+	speed: 0.3740s/iter; left time: 766.9872s
+Epoch: 2 cost time: 94.68668007850647
+Epoch: 2, Steps: 250 | Train Loss: 1.171 Vali Loss: 1.168 Vali Acc: 0.617 Test Loss: 1.175 Test Acc: 0.614
+Validation loss decreased (-0.613582 --> -0.613582).  Saving model ...
+	iters: 100, epoch: 3 | loss: 1.1502882
+	speed: 0.7438s/iter; left time: 1413.8933s
+	iters: 200, epoch: 3 | loss: 1.0612912
+	speed: 0.3639s/iter; left time: 655.3503s
+Epoch: 3 cost time: 102.81713390350342
+Epoch: 3, Steps: 250 | Train Loss: 1.169 Vali Loss: 1.164 Vali Acc: 0.617 Test Loss: 1.174 Test Acc: 0.614
+Validation loss decreased (-0.613582 --> -0.613582).  Saving model ...
+	iters: 100, epoch: 4 | loss: 0.9984365
+	speed: 0.9576s/iter; left time: 1580.9279s
+	iters: 200, epoch: 4 | loss: 0.8345467
+	speed: 0.3433s/iter; left time: 532.5132s
+Epoch: 4 cost time: 104.67256951332092
+Epoch: 4, Steps: 250 | Train Loss: 0.960 Vali Loss: 0.773 Vali Acc: 0.725 Test Loss: 0.780 Test Acc: 0.708
+Validation loss decreased (-0.613582 --> -0.708233).  Saving model ...
+	iters: 100, epoch: 5 | loss: 0.5942585
+	speed: 0.7888s/iter; left time: 1105.1658s
+	iters: 200, epoch: 5 | loss: 0.8631324
+	speed: 0.3641s/iter; left time: 473.6291s
+Epoch: 5 cost time: 90.07915592193604
+Epoch: 5, Steps: 250 | Train Loss: 0.706 Vali Loss: 0.641 Vali Acc: 0.775 Test Loss: 0.641 Test Acc: 0.778
+Validation loss decreased (-0.708233 --> -0.777945).  Saving model ...
+	iters: 100, epoch: 6 | loss: 0.5180538
+	speed: 0.7618s/iter; left time: 876.8510s
+	iters: 200, epoch: 6 | loss: 0.7483213
+	speed: 0.5434s/iter; left time: 571.1538s
+Epoch: 6 cost time: 112.38269186019897
+Epoch: 6, Steps: 250 | Train Loss: 0.592 Vali Loss: 0.562 Vali Acc: 0.785 Test Loss: 0.581 Test Acc: 0.787
+Validation loss decreased (-0.777945 --> -0.786959).  Saving model ...
+	iters: 100, epoch: 7 | loss: 0.5525172
+	speed: 0.7169s/iter; left time: 645.9393s
+	iters: 200, epoch: 7 | loss: 0.4924713
+	speed: 0.5229s/iter; left time: 418.8447s
+Epoch: 7 cost time: 106.24353694915771
+Epoch: 7, Steps: 250 | Train Loss: 0.524 Vali Loss: 0.517 Vali Acc: 0.797 Test Loss: 0.528 Test Acc: 0.797
+Validation loss decreased (-0.786959 --> -0.797175).  Saving model ...
+	iters: 100, epoch: 8 | loss: 0.4418890
+	speed: 0.7594s/iter; left time: 494.3648s
+	iters: 200, epoch: 8 | loss: 0.5094005
+	speed: 0.4525s/iter; left time: 249.3480s
+Epoch: 8 cost time: 103.34885573387146
+Epoch: 8, Steps: 250 | Train Loss: 0.486 Vali Loss: 0.495 Vali Acc: 0.808 Test Loss: 0.507 Test Acc: 0.808
+Validation loss decreased (-0.797175 --> -0.807692).  Saving model ...
+	iters: 100, epoch: 9 | loss: 0.7188143
+	speed: 0.7338s/iter; left time: 294.2679s
+	iters: 200, epoch: 9 | loss: 0.4731164
+	speed: 0.3302s/iter; left time: 99.4012s
+Epoch: 9 cost time: 88.96952700614929
+Epoch: 9, Steps: 250 | Train Loss: 0.456 Vali Loss: 0.477 Vali Acc: 0.811 Test Loss: 0.485 Test Acc: 0.806
+EarlyStopping counter: 1 out of 10
+	iters: 100, epoch: 10 | loss: 0.3706021
+	speed: 0.7006s/iter; left time: 105.7967s
+	iters: 200, epoch: 10 | loss: 0.5348921
+	speed: 0.3349s/iter; left time: 17.0787s
+Epoch: 10 cost time: 91.28777027130127
+Epoch: 10, Steps: 250 | Train Loss: 0.426 Vali Loss: 0.492 Vali Acc: 0.804 Test Loss: 0.490 Test Acc: 0.808
+Validation loss decreased (-0.807692 --> -0.807692).  Saving model ...
+>>>>>>>testing : classification_classification_vpn-iscx-m.csv_none_TimeMixer_custom_sl96_pl0_dm128_nh8_el5_dl2_df256_fc3_ebtimeF_dtTrue_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test shape: torch.Size([3328, 6]) torch.Size([3328])
+accuracy:0.8082932692307693, precision:0.7852103641473837, recall:0.8082932692307693, f1:0.7915937028338355

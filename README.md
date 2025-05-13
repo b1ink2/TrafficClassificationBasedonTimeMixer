@@ -27,6 +27,17 @@
 
 </div>
 
+🌟🌟🌟Our latest research: "**TimeMixer++: A General Time Series Pattern Machine for Universal Predictive Analysis**", in arXiv 2024. [\[paper\]](https://arxiv.org/abs/2410.16032)
+
+```bibtex
+@article{wang2024timemixer++,
+  title={TimeMixer++: A General Time Series Pattern Machine for Universal Predictive Analysis},
+  author={Wang, Shiyu and Li, Jiawei and Shi, Xiaoming and Ye, Zhou and Mo, Baichuan and Lin, Wenze and Ju, Shengtong and Chu, Zhixuan and Jin, Ming},
+  journal={arXiv preprint arXiv:2410.16032},
+  year={2024}
+}
+```
+
 ---
 >
 > 🙋 Please let us know if you find out a mistake or have any suggestions!
@@ -40,19 +51,11 @@
   booktitle={International Conference on Learning Representations (ICLR)},
   year={2024}
 }
-
-@article{wang2024timemixer++,
-  title={TimeMixer++: A General Time Series Pattern Machine for Universal Predictive Analysis},
-  author={Wang, Shiyu and Li, Jiawei and Shi, Xiaoming and Ye, Zhou and Mo, Baichuan and Lin, Wenze and Ju, Shengtong and Chu, Zhixuan and Jin, Ming},
-  journal={arXiv preprint arXiv:2410.16032},
-  year={2024}
-}
-
 ```
 
 # Updates
 
-🚩 **News** (2024.10): TimeMixer has been included in **[PyPOTS](https://pypots.com/)**. Many thanks to the PyPOTS team.
+🚩 **News** (2024.10): **TimeMixer++** introduction in **[Chinese](https://mp.weixin.qq.com/s/l_MB11XoShV7vK3BjtEPog)** is now available！
 
 🚩 **News** (2024.10): We have newly released **[TimeMixer++](https://arxiv.org/abs/2410.16032)** as an upgraded version of TimeMixer. **TimeMixer++ is a time series pattern machine** that employs multi-scale and multi-resolution pattern extraction to **achieve 🏆state-of-the-art across 8 diverse analytical tasks!** 
 
@@ -123,7 +126,6 @@ Note that **Future Multipredictor Mixing (FMM)** is an ensemble of multiple pred
 ## Get Started
 
 1. Install requirements. ```pip install -r requirements.txt```
-    > If you are using **Python 3.8**, please change the `sktime` version in `requirements.txt` to `0.29.1`
 2. Download data. You can download all datasets from [Google Driver](https://drive.google.com/u/0/uc?id=1NF7VEefXCmXuWNbnNe858WvQAkJ_7wuP&export=download), [Baidu Driver](https://pan.baidu.com/share/init?surl=r3KhGd0Q9PJIUZdfEYoymg&pwd=i9iy) or [Kaggle Datasets](https://www.kaggle.com/datasets/wentixiaogege/time-series-dataset). **All the datasets are well pre-processed** and can be used easily.
 3. Train the model. We provide the experiment scripts of all benchmarks under the folder `./scripts`. You can reproduce the experiment results by:
 
@@ -143,7 +145,7 @@ We conduct extensive experiments to evaluate the performance and efficiency of T
 
 ### Long-term Forecasting
 
-To ensure fairness in model comparison, experiments were performed with standardized parameters, including aligned input lengths, batch sizes, and training epochs. Additionally, given that results in various studies often stem from hyperparameter optimization, we include outcomes from comprehensive parameter searches.
+To ensure model comparison fairness, experiments were performed with standardized parameters, aligning input lengths, batch sizes, and training epochs. Additionally, given that results in various studies often stem from hyperparameter optimization, we include outcomes from comprehensive parameter searches.
 
 <p align="center">
 <img src="./figures/long_results.png"  alt="" align=center />
